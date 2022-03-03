@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: black;
+  color: white;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  /* max-width: 1300px; */
+  flex-direction: column;
+}
+
+.wrapper {
+  /* display: flex;
+  justify-content: space-between; */
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2em;
+  align-items: end;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.head {
+  font-size: 2em;
+  font-weight: 700;
+  margin-bottom: 1em;
+}
+
+.head_text {
+  font-size: 1em;
+  font-weight: 400;
+  margin-bottom: 6em;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
+  background-color: rgb(20, 20, 20);
+  border: 1px solid rgb(32, 32, 32);
+  border-radius: 10px;
+  padding: 1em;
+  width: 350px;
+  height: 270px;
+}
+
+.card_head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.card_head_text {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* justify-content: center; */
+}
+
+.free {
+  font-size: 1.3em;
+  font-weight: bolder;
+  color: rgb(80, 78, 78);
+}
+
+.broker {
+  font-size: 1.5em;
+}
+
+.head_price {
+  display: flex;
+  /* align-items: center; */
+}
+
+.head_price_bottom {
+  font-size: 3.5em;
+  font-weight: 500;
+}
+
+.purchase {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: flex-start;
+}
+
+.head_price_top {
+  font-size: 1.3em;
+}
+
+.monthly_unit {
+  font-size: 0.7em;
+  color: rgb(80, 78, 78);
+}
+
+.card_middle > * {
+  margin-bottom: 0.8em;
+  font-size: 0.8em;
+  color: rgba(255, 255, 255, 0.938);
+}
+
+.card_middle_text i {
+  color: green;
+  font-size: 0.8em;
+  margin-right: 0.5em;
+}
+
+.card_button {
+  color: turquoise;
+  width: 100%;
+  border: 1px solid rgb(51, 50, 50);
+  background-color: rgb(20, 20, 20);
+  border-radius: 3px;
+  padding: 1em 0;
+}
+
+/* ---------MIDDLE CARD------- */
+
+.middle {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  position: relative;
+}
+
+.trading {
+  background-color: turquoise;
+  color: black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  width: 350px;
+  padding: 0.5em 0;
+  position: absolute;
+  top: -2em;
+  left: 0;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.prime_middle,
+.prime_right,
+.right_button {
+  color: rgb(255, 217, 154);
+}
+
+.middle_button {
+  color: black;
+  background: linear-gradient(
+    82deg,
+    rgba(255, 217, 154, 1) 0%,
+    rgba(204, 147, 67, 1) 100%
+  );
+  border-radius: 5px;
+}
+
+/* ------------CARD RIGHT--------- */
+
+.details {
+  color: turquoise;
+  text-align: center;
+  font-size: 0.8em;
+  font-weight: lighter;
+  margin-top: 4em;
+}
